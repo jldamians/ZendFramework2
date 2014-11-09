@@ -1,0 +1,27 @@
+<h1>Person "<?php echo $this->name ?>"</h1>
+<ol>
+	<li><strong>Ciudad: </strong><?php echo $this->city ?></li>
+	<li><strong>Edad: </strong><?php echo $this->age ?></li>
+	<li><strong>E-Mail: </strong><?php echo $this->email ?></li>
+	<li><strong>Móbil: </strong><?php echo $this->movil ?></li>
+</ol>
+<h3>Hermanos</h3>
+<ul>
+	<?php
+		foreach ($this->hermanos as $key => $value) {
+	?>
+	<li><strong>Hermano <?php echo $key ?>: </strong><?php echo $value ?></li>
+	<?php
+		}
+	?>
+</ul>
+<h3>Padres</h3>
+<ul>
+	<?php
+		foreach ($this->padres as $key => $value) {
+	?>
+	<li><strong>Hermano <?php echo $key ?>: </strong><?php echo $value ?></li>
+	<?php
+		}
+	?>
+</ul>
