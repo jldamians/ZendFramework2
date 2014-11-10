@@ -1,3 +1,10 @@
+Utilizar cualquiera de las siguientes rutas
+===========================================
+
+localhost/proyecto/zf2/ZendSkeletonApplication/public/application/
+localhost/proyecto/zf2/ZendSkeletonApplication/public/application/person
+localhost/proyecto/zf2/ZendSkeletonApplication/public/application/person/info
+
 ZendSkeletonApplication
 =======================
 
