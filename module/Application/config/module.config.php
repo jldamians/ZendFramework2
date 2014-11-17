@@ -15,8 +15,8 @@ return array(
                 'options' => array(
                     'route'    => '/',
                     'defaults' => array(
-                        'controller' => 'Application\Controller\Index',
-                        'action'     => 'index',
+                        'controller' => 'Application\Controller\Person',
+                        'action'     => 'info',
                     ),
                 ),
             ),
@@ -30,8 +30,8 @@ return array(
                     'route'    => '/application',
                     'defaults' => array(
                         '__NAMESPACE__' => 'Application\Controller',
-                        'controller'    => 'Index',
-                        'action'        => 'index',
+                        'controller'    => 'Person',
+                        'action'        => 'info',
                     ),
                 ),
                 'may_terminate' => true,
@@ -52,7 +52,7 @@ return array(
                                 //ó
                                 //localhost/proyecto/zf2/ZendSkeletonApplication/public/application/person/info
                                 'controller' => 'person', // puesto
-                                'action'     => info // puesto
+                                'action'     => 'info' // puesto
                             ),
                         ),
                     ),
