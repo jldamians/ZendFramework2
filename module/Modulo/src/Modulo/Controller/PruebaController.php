@@ -18,4 +18,21 @@ class PruebaController extends AbstractActionController
     {
         return new ViewModel();
     }
+    public function verAction()
+    {
+    	$view = new ViewModel();
+
+
+        //$view->setTemplate('sistema/paginador.phtml')
+
+        //Indicamos que layout va a utilizar este método
+        $this->layout('layout/principal');
+        //Le pasamos un parámetro
+		$this->layout()->saludo = "Saludos desde el controlador -Ver-";
+		//Establecemos el titulo de la página
+		$this->layout()->title  = "Soy el título de la plantilla -Principal-";
+        //Renderizamos la vista
+
+        return $view;
+    }
 }
