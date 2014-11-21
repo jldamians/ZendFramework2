@@ -16,7 +16,23 @@ class PruebaController extends AbstractActionController
 {
     public function indexAction()
     {
-        return new ViewModel();
+        //Creamos el objeto del modelo y llamamos a sus metodos
+
+        $modelo      = new PruebaModel();
+        $mensaje     = $modelo->getMensaje();
+        $modelo->setUsuarios();
+        $usuarios    = $modelo->getUsuarios();
+        $nombre      = $modelo->devuelveNombre("Mi nombre es Victor");
+
+        //Pasamos a la vista todo lo que recogemos del modelo
+        return new ViewModel(
+            array(
+                "mensaje"  => $mensaje,
+                "usuarios" => $usuarios,
+                "nombre"   => $nombre
+            )
+        );
+
     }
     public function verAction()
     {

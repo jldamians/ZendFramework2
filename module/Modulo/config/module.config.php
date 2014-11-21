@@ -25,7 +25,7 @@ return array(
                     ),
                     'defaults' => array(
                         'controller' => 'Modulo/Controller/Prueba',
-                        'action'     => 'ver'
+                        'action'     => 'index'
                     ),
                 ),
             ),
